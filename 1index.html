@@ -220,15 +220,7 @@
         startBtn.style.display = "none";
         canvas.innerHTML = "";
     }
-
-    function saveScore() {
-        const name = document.getElementById("player-name").value || "Player";
-        leaderboard.push({ name, score });
-        localStorage.setItem("dododotsRank", JSON.stringify(leaderboard));
-        updateRankings();
-        document.getElementById("save-area").style.display = "none";
-        startBtn.style.display = "inline-block";
-        document.getElementById("player-name").value = "";
+    
     }
 </script>
 </body>
